@@ -30,7 +30,7 @@ namespace MiCalculadora
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)

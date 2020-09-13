@@ -41,12 +41,16 @@
             // 
             // lblResultado
             // 
+            this.lblResultado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(378, 29);
+            this.lblResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblResultado.Location = new System.Drawing.Point(397, 49);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 31);
             this.lblResultado.TabIndex = 0;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtNumero1
             // 

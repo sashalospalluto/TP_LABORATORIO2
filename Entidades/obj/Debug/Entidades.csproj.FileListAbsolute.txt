@@ -4,3 +4,9 @@ C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\Entidades\obj\D
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.dll
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.pdb
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\bin\Debug\Entidades.dll
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.dll
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.pdb

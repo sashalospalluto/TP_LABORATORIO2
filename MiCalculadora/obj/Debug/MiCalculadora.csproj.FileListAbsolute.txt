@@ -11,3 +11,16 @@ C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\MiCalculadora\o
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\MiCalculadora\obj\Debug\MiCalculadora.exe
 C:\Users\sasha\Documents\UTN\PROGRAMACION II\TP1-SASHALOSPALLUTO\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\bin\Debug\Entidades.dll
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\bin\Debug\Entidades.pdb
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\sasha\Source\Repos\TP_LABORATORIO2\MiCalculadora\obj\Debug\MiCalculadora.pdb

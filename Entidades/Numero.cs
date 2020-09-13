@@ -15,21 +15,21 @@ namespace Entidades
             this.numero = 0;
         }
 
-        public Numero (double numero) :this()
+        public Numero (double numero) :this(numero.ToString())
         {
-            this.numero = numero;
+            
         }
 
-        public Numero (string numero) :this(double.Parse(numero))
+        public Numero (string numero) :this()
         {
-
+            this.SetNumero = numero;
         }
 
         public string SetNumero 
         {             
             set
             {
-                this.numero = this.ValidarNumero(value);
+                this.numero = ValidarNumero(value);
             }
         }
 
@@ -85,6 +85,11 @@ namespace Entidades
             int numeroEntero;
 
             numeroEntero = (int)numero;
+
+            if(numeroEntero<0)
+            {
+                numeroEntero = numeroEntero * (-1);
+            }
 
             while (numeroEntero > 1)
             {
@@ -203,7 +208,7 @@ namespace Entidades
         /// </summary>
         /// <param name="strNumero">numero a validar de tipo string</param>
         /// <returns>retornará el valor del numero, en caso de que el valor no sea un numero, retornará 0 (cero)</returns>
-        private double ValidarNumero (string strNumero)
+        private static double ValidarNumero (string strNumero)
         {
             double numeroValidado = 0;
 
