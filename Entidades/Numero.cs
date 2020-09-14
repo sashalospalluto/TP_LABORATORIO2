@@ -46,7 +46,7 @@ namespace Entidades
             int contador = binario.Length;
             string esUnNumeroBinario = "";
 
-            if(EsBinario(binario))
+            if(EsBinario(binario) && binario != string.Empty && binario != "Valor invalido")
             {
                 for (int i = 0; i < contador; i++)
                 {
@@ -114,14 +114,19 @@ namespace Entidades
         /// Convierte un numero decimal pasado como string a binario
         /// </summary>
         /// <param name="numero">numero decimal</param>
-        /// <returns>Devuelve el numero decimal convertido a binario</returns>
+        /// <returns>Devuelve el numero decimal convertido a binario, en caso de que el valor recibido sea nulo, devuelve "valor invalido"</returns>
         public string DecimalBinario(string numero)
         {
             double binario;
+            string numeroConvertido = "Valor invalido";
 
-            double.TryParse(numero, out binario);
+            if(numero != string.Empty && numero != "Valor invalido")
+            {
+                double.TryParse(numero, out binario);
+                numeroConvertido = DecimalBinario(binario);
+            }            
 
-            return DecimalBinario(binario);
+            return numeroConvertido;
         }
 
         /// <summary>
