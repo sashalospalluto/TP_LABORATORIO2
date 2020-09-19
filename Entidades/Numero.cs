@@ -105,7 +105,14 @@ namespace Entidades
                 numeroEntero = numeroEntero / 2;
             }
 
-            binario = '1' + binario;
+            if (numeroEntero != 0)
+            {
+                binario = "1" + binario;
+            }
+            else
+            {
+                binario = "0";
+            }          
 
             return binario;
         }

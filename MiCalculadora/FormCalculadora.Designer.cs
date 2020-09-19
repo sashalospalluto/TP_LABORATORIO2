@@ -64,13 +64,15 @@
             // 
             this.cmbOperador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperador.FormattingEnabled = true;
+            this.cmbOperador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbOperador.Items.AddRange(new object[] {
-            "+",
             "-",
             "*",
             "/",
+            "+",
             " "});
             this.cmbOperador.Location = new System.Drawing.Point(188, 93);
+            this.cmbOperador.MaxLength = 1;
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(108, 39);
             this.cmbOperador.TabIndex = 2;
@@ -153,6 +155,7 @@
             this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Sasha Lospalluto del curso 2D ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCalculadora_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -163,13 +166,13 @@
 
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.TextBox txtNumero1;
-        private System.Windows.Forms.ComboBox cmbOperador;
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Button btnOperar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnConvertirABinario;
         private System.Windows.Forms.Button btnConvertirADecimal;
+        private System.Windows.Forms.ComboBox cmbOperador;
     }
 }
 

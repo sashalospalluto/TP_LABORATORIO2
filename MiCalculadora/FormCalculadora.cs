@@ -20,7 +20,7 @@ namespace MiCalculadora
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Limpiar();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -59,7 +59,10 @@ namespace MiCalculadora
             txtNumero1.Clear();
             txtNumero2.Clear();
             cmbOperador.SelectedIndex = 4;
-            lblResultado.Text = "";            
+            lblResultado.Text = "";
+            //cmbOperador.Items.Clear();
+            //cmbOperador.ResetText();
+            
         }
 
         /// <summary>
@@ -74,10 +77,24 @@ namespace MiCalculadora
             Numero num1 = new Numero(numero1);
             Numero num2 = new Numero(numero2);
             double resultadoOperacion;
-
-            resultadoOperacion = Calculadora.Operar(num1, num2, operador);
+            Random rnd = new Random();
+            
+            if (string.IsNullOrEmpty(operador))
+            {
+                operador = "0";
+            }
+            
+            resultadoOperacion = Calculadora.Operar(num1, num2, Convert.ToChar(operador));
 
             return resultadoOperacion;
+        }
+
+        private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Seguro de querer salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true; //no deja que se cierre el boton
+            }
         }
     }
 }

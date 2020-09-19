@@ -15,12 +15,12 @@ namespace Entidades
         /// <param name="num2">segundo numero ingresado</param>
         /// <param name="operador">operación aritmetica a realizar</param>
         /// <returns>resultado de la operación aritmetica</returns>
-        public static double Operar (Numero num1, Numero num2, string operador)
+        public static double Operar (Numero num1, Numero num2, char operador)
         {
             string operadorAUtilizar;
             double resultado=0;
 
-            operadorAUtilizar = ValidarOperador(char.Parse(operador));
+            operadorAUtilizar = ValidarOperador(operador);                      
 
             switch (operadorAUtilizar)
             {
