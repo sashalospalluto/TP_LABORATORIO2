@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class Helado : Producto
     {
-        public enum TipoDeProducto
+        public enum Tamanio
         {
             Cucurucho,
             Cuarto,
@@ -17,7 +17,8 @@ namespace Entidades
         }
 
         private List<GustoHelado> saboresDeHelado;
-        private TipoDeProducto tipoDeProducto;
+        private Tamanio tamanio;
+        private Tipo tipo;
 
         public List<GustoHelado> SaboresDeHelado 
         {
@@ -32,45 +33,53 @@ namespace Entidades
             }
         }
 
-        private TipoDeProducto TipoDeProductoElegido
+        private Tamanio TamanioDelHelado
         {
             get
             {
-                return tipoDeProducto;
+                return tamanio;
             }
             set
             {
-                this.tipoDeProducto = value;
+                this.tamanio = value;
             }
         }
 
         public Helado()
         {
             this.saboresDeHelado = new List<GustoHelado>();
+            this.tipo = Tipo.Helado;
+            
+        }
+
+        public Helado (Tamanio tamanio, List<GustoHelado> gustos)
+        {
+            this.tamanio = tamanio;
+            this.saboresDeHelado = gustos;
         }
 
         public static bool operator + (Helado p , GustoHelado gusto)
         {
             bool agregado = false;
 
-            switch (p.tipoDeProducto)
+            switch (p.tamanio)
             {
-                case TipoDeProducto.Cucurucho:
+                case Tamanio.Cucurucho:
                     if (p.saboresDeHelado.Count() < 2)
                     {
                         p.saboresDeHelado.Add(gusto);
                         agregado = true;
                     }
                     break;
-                case TipoDeProducto.Cuarto:
-                case TipoDeProducto.Medio:
+                case Tamanio.Cuarto:
+                case Tamanio.Medio:
                     if (p.saboresDeHelado.Count() < 3)
                     {
                         p.saboresDeHelado.Add(gusto);
                         agregado = true;
                     }
                     break;
-                case TipoDeProducto.Kilo:
+                case Tamanio.Kilo:
                     if (p.saboresDeHelado.Count() < 4)
                     {
                         p.saboresDeHelado.Add(gusto);
@@ -101,18 +110,18 @@ namespace Entidades
         {
             double precio=0;
 
-            switch (this.tipoDeProducto)
+            switch (this.tamanio)
             {
-                case TipoDeProducto.Cucurucho:
+                case Tamanio.Cucurucho:
                     precio = 100;
                     break;
-                case TipoDeProducto.Cuarto:
+                case Tamanio.Cuarto:
                     precio = 170;
                     break;
-                case TipoDeProducto.Medio:
+                case Tamanio.Medio:
                     precio = 300;
                     break;
-                case TipoDeProducto.Kilo:
+                case Tamanio.Kilo:
                     precio = 500;
                     break;
                 default:

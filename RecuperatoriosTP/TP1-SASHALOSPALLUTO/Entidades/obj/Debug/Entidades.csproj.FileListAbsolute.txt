@@ -10,3 +10,9 @@ C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.csproj
 C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.dll
 C:\Users\sasha\Source\Repos\TP_LABORATORIO2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\bin\Debug\Entidades.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP1-SASHALOSPALLUTO\Entidades\obj\Debug\Entidades.pdb

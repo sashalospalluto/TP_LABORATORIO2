@@ -7,3 +7,12 @@ C:\Users\sasha\Desktop\TP_LABORATORIO2\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.T
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Excepciones.dll
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Excepciones.pdb
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP3-SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP3\Archivos\obj\Debug\Archivos.pdb

@@ -11,3 +11,16 @@ C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.csproj.CopyComplete
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.exe
 C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\bin\Debug\Heladeria.exe.config
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\bin\Debug\Heladeria.exe
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\bin\Debug\Heladeria.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\bin\Debug\Entidades.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\bin\Debug\Entidades.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.csprojAssemblyReference.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.Form1.resources
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.Properties.Resources.resources
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.csproj.GenerateResource.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.csproj.CopyComplete
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.exe
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Heladeria\obj\Debug\Heladeria.pdb

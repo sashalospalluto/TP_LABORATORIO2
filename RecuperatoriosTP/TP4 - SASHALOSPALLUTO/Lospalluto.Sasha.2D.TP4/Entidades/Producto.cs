@@ -26,5 +26,11 @@ namespace Entidades
         }
 
         public abstract double Precio();
+
+
+
+
+
+
     }
 }
