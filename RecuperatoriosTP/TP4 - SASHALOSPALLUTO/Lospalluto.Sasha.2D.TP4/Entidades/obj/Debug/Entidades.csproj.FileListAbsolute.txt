@@ -1,0 +1,6 @@
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.pdb
