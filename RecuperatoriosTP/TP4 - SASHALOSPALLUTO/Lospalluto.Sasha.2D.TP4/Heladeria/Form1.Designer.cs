@@ -41,21 +41,35 @@
             this.lblSeleccionGusto = new System.Windows.Forms.Label();
             this.lblNuevoPedido = new System.Windows.Forms.Label();
             this.btnAgregarPedido = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvEnPreparacion = new System.Windows.Forms.DataGridView();
             this.lblEnPreparacion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbTamanio = new System.Windows.Forms.ComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.dgvCarrito = new System.Windows.Forms.DataGridView();
+            this.NumeroPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sabor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sabor2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sabor3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sabor4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFinalizados = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEnPreparacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFinalizados)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(527, 586);
+            this.btnCancelar.Location = new System.Drawing.Point(703, 570);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(85, 38);
             this.btnCancelar.TabIndex = 0;
@@ -65,7 +79,7 @@
             // clbListaDeGustos
             // 
             this.clbListaDeGustos.FormattingEnabled = true;
-            this.clbListaDeGustos.Location = new System.Drawing.Point(527, 245);
+            this.clbListaDeGustos.Location = new System.Drawing.Point(703, 229);
             this.clbListaDeGustos.Name = "clbListaDeGustos";
             this.clbListaDeGustos.Size = new System.Drawing.Size(241, 124);
             this.clbListaDeGustos.TabIndex = 1;
@@ -82,24 +96,26 @@
             // 
             // btnEfectuarPedido
             // 
-            this.btnEfectuarPedido.Location = new System.Drawing.Point(638, 586);
+            this.btnEfectuarPedido.Location = new System.Drawing.Point(814, 570);
             this.btnEfectuarPedido.Name = "btnEfectuarPedido";
             this.btnEfectuarPedido.Size = new System.Drawing.Size(130, 38);
             this.btnEfectuarPedido.TabIndex = 3;
             this.btnEfectuarPedido.Text = "Efectuar Pedido";
             this.btnEfectuarPedido.UseVisualStyleBackColor = true;
+            this.btnEfectuarPedido.Click += new System.EventHandler(this.btnEfectuarPedido_Click);
             // 
             // txbNombreCliente
             // 
-            this.txbNombreCliente.Location = new System.Drawing.Point(614, 114);
+            this.txbNombreCliente.Location = new System.Drawing.Point(758, 98);
             this.txbNombreCliente.Name = "txbNombreCliente";
             this.txbNombreCliente.Size = new System.Drawing.Size(136, 20);
             this.txbNombreCliente.TabIndex = 4;
+            this.txbNombreCliente.Leave += new System.EventHandler(this.txbNombreCliente_Leave);
             // 
             // lblNombreCliente
             // 
             this.lblNombreCliente.AutoSize = true;
-            this.lblNombreCliente.Location = new System.Drawing.Point(525, 117);
+            this.lblNombreCliente.Location = new System.Drawing.Point(669, 101);
             this.lblNombreCliente.Name = "lblNombreCliente";
             this.lblNombreCliente.Size = new System.Drawing.Size(79, 13);
             this.lblNombreCliente.TabIndex = 5;
@@ -108,7 +124,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(687, 540);
+            this.lblTotal.Location = new System.Drawing.Point(863, 524);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(31, 13);
             this.lblTotal.TabIndex = 6;
@@ -117,7 +133,7 @@
             // lblMontoTotal
             // 
             this.lblMontoTotal.AutoSize = true;
-            this.lblMontoTotal.Location = new System.Drawing.Point(755, 540);
+            this.lblMontoTotal.Location = new System.Drawing.Point(931, 524);
             this.lblMontoTotal.Name = "lblMontoTotal";
             this.lblMontoTotal.Size = new System.Drawing.Size(13, 13);
             this.lblMontoTotal.TabIndex = 7;
@@ -126,7 +142,7 @@
             // cmbTipoDeProducto
             // 
             this.cmbTipoDeProducto.FormattingEnabled = true;
-            this.cmbTipoDeProducto.Location = new System.Drawing.Point(614, 156);
+            this.cmbTipoDeProducto.Location = new System.Drawing.Point(758, 140);
             this.cmbTipoDeProducto.Name = "cmbTipoDeProducto";
             this.cmbTipoDeProducto.Size = new System.Drawing.Size(136, 21);
             this.cmbTipoDeProducto.TabIndex = 8;
@@ -136,7 +152,7 @@
             // lblTipoProducto
             // 
             this.lblTipoProducto.AutoSize = true;
-            this.lblTipoProducto.Location = new System.Drawing.Point(525, 159);
+            this.lblTipoProducto.Location = new System.Drawing.Point(669, 143);
             this.lblTipoProducto.Name = "lblTipoProducto";
             this.lblTipoProducto.Size = new System.Drawing.Size(78, 13);
             this.lblTipoProducto.TabIndex = 9;
@@ -145,7 +161,7 @@
             // lblSeleccionGusto
             // 
             this.lblSeleccionGusto.AutoSize = true;
-            this.lblSeleccionGusto.Location = new System.Drawing.Point(607, 229);
+            this.lblSeleccionGusto.Location = new System.Drawing.Point(779, 213);
             this.lblSeleccionGusto.Name = "lblSeleccionGusto";
             this.lblSeleccionGusto.Size = new System.Drawing.Size(97, 13);
             this.lblSeleccionGusto.TabIndex = 10;
@@ -154,7 +170,7 @@
             // lblNuevoPedido
             // 
             this.lblNuevoPedido.AutoSize = true;
-            this.lblNuevoPedido.Location = new System.Drawing.Point(611, 64);
+            this.lblNuevoPedido.Location = new System.Drawing.Point(779, 38);
             this.lblNuevoPedido.Name = "lblNuevoPedido";
             this.lblNuevoPedido.Size = new System.Drawing.Size(89, 13);
             this.lblNuevoPedido.TabIndex = 11;
@@ -162,29 +178,28 @@
             // 
             // btnAgregarPedido
             // 
-            this.btnAgregarPedido.Location = new System.Drawing.Point(527, 375);
+            this.btnAgregarPedido.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAgregarPedido.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregarPedido.Location = new System.Drawing.Point(704, 360);
             this.btnAgregarPedido.Name = "btnAgregarPedido";
             this.btnAgregarPedido.Size = new System.Drawing.Size(241, 23);
             this.btnAgregarPedido.TabIndex = 12;
             this.btnAgregarPedido.Text = "AGREGAR AL PEDIDO";
-            this.btnAgregarPedido.UseVisualStyleBackColor = true;
+            this.btnAgregarPedido.UseVisualStyleBackColor = false;
             this.btnAgregarPedido.Click += new System.EventHandler(this.btnAgregarPedido_Click);
             // 
-            // dataGridView1
+            // dgvEnPreparacion
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 376);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(427, 210);
-            this.dataGridView1.TabIndex = 13;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(25, 107);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(427, 210);
-            this.dataGridView2.TabIndex = 14;
+            this.dgvEnPreparacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEnPreparacion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numPedido,
+            this.Cliente,
+            this.total});
+            this.dgvEnPreparacion.Location = new System.Drawing.Point(25, 105);
+            this.dgvEnPreparacion.Name = "dgvEnPreparacion";
+            this.dgvEnPreparacion.Size = new System.Drawing.Size(442, 210);
+            this.dgvEnPreparacion.TabIndex = 14;
+            this.dgvEnPreparacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEnPreparacion_CellContentClick);
             // 
             // lblEnPreparacion
             // 
@@ -207,7 +222,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(556, 191);
+            this.label2.Location = new System.Drawing.Point(700, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 17;
@@ -216,31 +231,127 @@
             // cmbTamanio
             // 
             this.cmbTamanio.FormattingEnabled = true;
-            this.cmbTamanio.Location = new System.Drawing.Point(614, 188);
+            this.cmbTamanio.Location = new System.Drawing.Point(758, 172);
             this.cmbTamanio.Name = "cmbTamanio";
             this.cmbTamanio.Size = new System.Drawing.Size(136, 21);
             this.cmbTamanio.TabIndex = 19;
             // 
-            // dataGridView3
+            // dgvCarrito
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(527, 417);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(241, 108);
-            this.dataGridView3.TabIndex = 20;
+            this.dgvCarrito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCarrito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NumeroPedido,
+            this.Tam,
+            this.Tipo,
+            this.precio,
+            this.sabor,
+            this.Sabor2,
+            this.Sabor3,
+            this.Sabor4});
+            this.dgvCarrito.Location = new System.Drawing.Point(550, 404);
+            this.dgvCarrito.Name = "dgvCarrito";
+            this.dgvCarrito.Size = new System.Drawing.Size(532, 113);
+            this.dgvCarrito.TabIndex = 20;
+            // 
+            // NumeroPedido
+            // 
+            this.NumeroPedido.HeaderText = "Numero Pedido";
+            this.NumeroPedido.Name = "NumeroPedido";
+            this.NumeroPedido.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Tam
+            // 
+            this.Tam.HeaderText = "Tamaño";
+            this.Tam.Name = "Tam";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "Precio";
+            this.precio.Name = "precio";
+            // 
+            // sabor
+            // 
+            this.sabor.HeaderText = "Sabor1";
+            this.sabor.Name = "sabor";
+            // 
+            // Sabor2
+            // 
+            this.Sabor2.HeaderText = "Sabor2";
+            this.Sabor2.Name = "Sabor2";
+            // 
+            // Sabor3
+            // 
+            this.Sabor3.HeaderText = "Sabor3";
+            this.Sabor3.Name = "Sabor3";
+            // 
+            // Sabor4
+            // 
+            this.Sabor4.HeaderText = "Sabor4";
+            this.Sabor4.Name = "Sabor4";
+            // 
+            // numPedido
+            // 
+            this.numPedido.HeaderText = "Numero de pedido";
+            this.numPedido.Name = "numPedido";
+            this.numPedido.Width = 150;
+            // 
+            // Cliente
+            // 
+            this.Cliente.HeaderText = "cliente";
+            this.Cliente.Name = "Cliente";
+            // 
+            // total
+            // 
+            this.total.HeaderText = "Monto Total";
+            this.total.Name = "total";
+            this.total.Width = 150;
+            // 
+            // dgvFinalizados
+            // 
+            this.dgvFinalizados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFinalizados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dgvFinalizados.Location = new System.Drawing.Point(25, 398);
+            this.dgvFinalizados.Name = "dgvFinalizados";
+            this.dgvFinalizados.Size = new System.Drawing.Size(442, 210);
+            this.dgvFinalizados.TabIndex = 21;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Numero de pedido";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "cliente";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Monto Total";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 689);
-            this.Controls.Add(this.dataGridView3);
+            this.ClientSize = new System.Drawing.Size(1100, 635);
+            this.Controls.Add(this.dgvFinalizados);
+            this.Controls.Add(this.dgvCarrito);
             this.Controls.Add(this.cmbTamanio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEnPreparacion);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEnPreparacion);
             this.Controls.Add(this.btnAgregarPedido);
             this.Controls.Add(this.lblNuevoPedido);
             this.Controls.Add(this.lblSeleccionGusto);
@@ -257,9 +368,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEnPreparacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFinalizados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,13 +391,27 @@
         private System.Windows.Forms.Label lblSeleccionGusto;
         private System.Windows.Forms.Label lblNuevoPedido;
         private System.Windows.Forms.Button btnAgregarPedido;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvEnPreparacion;
         private System.Windows.Forms.Label lblEnPreparacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbTamanio;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvCarrito;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sabor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sabor2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sabor3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sabor4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn total;
+        private System.Windows.Forms.DataGridView dgvFinalizados;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }
 

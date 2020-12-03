@@ -1,0 +1,521 @@
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Tramontana
+Mascarpone
+PRECIO: 100
+
+
+Torta TAMAÑO: Individual
+GUSTOS
+Americana
+Tramontana
+Mascarpone
+PRECIO: 120
+
+
+Helado TAMAÑO: Kilo
+GUSTOS
+Vainilla
+PRECIO: 500
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: Juan
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Americana
+Chocolate
+PRECIO: 170
+
+
+Torta TAMAÑO: Entero
+GUSTOS
+Chocolate
+PRECIO: 400
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: dr
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Americana
+PRECIO: 120
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+Tramontana
+PRECIO: 170
+
+
+Torta TAMAÑO: Individual
+GUSTOS
+Americana
+Tramontana
+PRECIO: 120
+
+
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 92473
+PEDIDO
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Granizado
+Chocolate
+PRECIO: 170
+
+
+Torta TAMAÑO: Entero
+GUSTOS
+Granizado
+Chocolate
+Vainilla
+PRECIO: 400
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Torta TAMAÑO: Entero
+GUSTOS
+Americana
+Mascarpone
+PRECIO: 400
+
+
+Helado TAMAÑO: Cuarto
+GUSTOS
+Americana
+Mascarpone
+Vainilla
+PRECIO: 170
+
+
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 19592
+PEDIDO
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 68174
+PEDIDO
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 33181
+PEDIDO
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 45585
+PEDIDO
+
+----------PEDIDO 0-------------
+NOMBRE CLIENTE: 91729
+PEDIDO
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Granizado
+frutilla
+PRECIO: 100
+
+
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Granizado
+Mascarpone
+frutilla
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: ery
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Americana
+Chocolate
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Chocolate
+Mascarpone
+PRECIO: 100
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: 92311
+PEDIDO
+Torta TAMAÑO: Entero
+GUSTOS
+Chocolate
+Vainilla
+PRECIO: 400
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Americana
+Tramontana
+PRECIO: 120
+
+
+Helado TAMAÑO: Cuarto
+GUSTOS
+Granizado
+Chocolate
+PRECIO: 170
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: juan
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Mascarpone
+PRECIO: 120
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Americana
+Mascarpone
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: fdsdf
+PEDIDO
+Torta TAMAÑO: Entero
+GUSTOS
+Chocolate
+PRECIO: 400
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sfd
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Tramontana
+frutilla
+PRECIO: 120
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: fd
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Tramontana
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Chocolate
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Medio
+GUSTOS
+Tramontana
+Mascarpone
+PRECIO: 300
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: asdad
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Mascarpone
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: ger
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Chocolate
+Mascarpone
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: hbh
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Tramontana
+PRECIO: 120
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: hftg
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Tramontana
+frutilla
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: terht
+PEDIDO
+Torta TAMAÑO: Entero
+GUSTOS
+Chocolate
+frutilla
+PRECIO: 400
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: tey
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+frutilla
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: fghd
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Tramontana
+frutilla
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: jgh
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Americana
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: yt
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Tramontana
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: h
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Granizado
+frutilla
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: trj
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Tramontana
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: grg
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Chocolate
+Mascarpone
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: fdhg
+PEDIDO
+Helado TAMAÑO: Kilo
+GUSTOS
+Chocolate
+PRECIO: 500
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: uu
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Granizado
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: ter
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Tramontana
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+Tramontana
+PRECIO: 170
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: yytju
+PEDIDO
+Helado TAMAÑO: Medio
+GUSTOS
+Chocolate
+Mascarpone
+PRECIO: 300
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: sahsa
+PEDIDO
+Torta TAMAÑO: Individual
+GUSTOS
+Chocolate
+Vainilla
+PRECIO: 120
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: t4
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Americana
+PRECIO: 100
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: efr
+PEDIDO
+Helado TAMAÑO: Cucurucho
+GUSTOS
+Americana
+PRECIO: 100
+
+
+
+----------PEDIDO 1-------------
+NOMBRE CLIENTE: sasha
+PEDIDO
+Torta TAMAÑO: Entero
+GUSTOS
+Chocolate
+PRECIO: 400
+
+
+
+----------PEDIDO 2-------------
+NOMBRE CLIENTE: juan
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+PRECIO: 170
+
+
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+PRECIO: 170
+
+
+
+----------PEDIDO 3-------------
+NOMBRE CLIENTE: pepe
+PEDIDO
+Helado TAMAÑO: Cuarto
+GUSTOS
+Chocolate
+PRECIO: 170
+
+
+

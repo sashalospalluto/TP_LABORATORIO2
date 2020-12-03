@@ -10,3 +10,8 @@ C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lo
 C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.dll
 C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Archivos.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Excepciones.dll
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Archivos.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\sasha\Desktop\TP_LABORATORIO2\RecuperatoriosTP\TP4 - SASHALOSPALLUTO\Lospalluto.Sasha.2D.TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete

@@ -15,25 +15,11 @@ namespace Entidades
             Medio,
             Kilo
         }
-
-        private List<GustoHelado> saboresDeHelado;
+        
         private Tamanio tamanio;
         private Tipo tipo;
-
-        public List<GustoHelado> SaboresDeHelado 
-        {
-            get
-            {
-                return this.saboresDeHelado;
-            }
-
-            set
-            {
-                this.saboresDeHelado = value;
-            }
-        }
-
-        private Tamanio TamanioDelHelado
+                
+        public Tamanio TamanioDelHelado
         {
             get
             {
@@ -47,42 +33,42 @@ namespace Entidades
 
         public Helado()
         {
-            this.saboresDeHelado = new List<GustoHelado>();
-            this.tipo = Tipo.Helado;
-            
-        }
+                        
+        }       
 
-        public Helado (Tamanio tamanio, List<GustoHelado> gustos)
+        public Helado (Tamanio tamanio, List<GustoHelado> gustos) :base(gustos)
         {
+            
+            this.tipo = Tipo.Helado;
             this.tamanio = tamanio;
-            this.saboresDeHelado = gustos;
+            this.Precio = this.CalcularPrecio();
         }
-
-        public static bool operator + (Helado p , GustoHelado gusto)
+                
+        public static Helado operator + (Helado p , GustoHelado gusto)
         {
             bool agregado = false;
 
             switch (p.tamanio)
             {
                 case Tamanio.Cucurucho:
-                    if (p.saboresDeHelado.Count() < 2)
+                    if (p.SaboresDeHelado.Count() < 2)
                     {
-                        p.saboresDeHelado.Add(gusto);
+                        p.SaboresDeHelado.Add(gusto);
                         agregado = true;
                     }
                     break;
                 case Tamanio.Cuarto:
                 case Tamanio.Medio:
-                    if (p.saboresDeHelado.Count() < 3)
+                    if (p.SaboresDeHelado.Count() < 3)
                     {
-                        p.saboresDeHelado.Add(gusto);
+                        p.SaboresDeHelado.Add(gusto);
                         agregado = true;
                     }
                     break;
                 case Tamanio.Kilo:
-                    if (p.saboresDeHelado.Count() < 4)
+                    if (p.SaboresDeHelado.Count() < 4)
                     {
-                        p.saboresDeHelado.Add(gusto);
+                        p.SaboresDeHelado.Add(gusto);
                         agregado = true;
                     }
                     break;
@@ -90,23 +76,23 @@ namespace Entidades
                     break;
             }
 
-            return agregado;
+            return p;
         }
 
         public static bool operator - (Helado p, GustoHelado gusto)
         {
             bool eliminado = false;
 
-            if(p.saboresDeHelado.Count>0)
+            if(p.SaboresDeHelado.Count>0)
             {
-                p.saboresDeHelado.Remove(gusto);
+                p.SaboresDeHelado.Remove(gusto);
                 eliminado = true;
             }
             
             return eliminado;
         }
 
-        public override double Precio ()
+        public override double CalcularPrecio ()
         {
             double precio=0;
 
@@ -131,6 +117,13 @@ namespace Entidades
             return precio;
         }
 
+        public override string ToString()
+        {
+            StringBuilder stb = new StringBuilder();
+            stb.AppendLine($"{this.tipo} TAMAÑO: {this.tamanio}");
+            stb.AppendLine(base.ToString());
+            return stb.ToString();
+        }
 
     }
 }
