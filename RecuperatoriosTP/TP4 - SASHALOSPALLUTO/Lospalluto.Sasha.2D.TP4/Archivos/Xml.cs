@@ -7,6 +7,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using Excepciones;
 
+//TEMA 19
+
 namespace Archivos
 {
     public class Xml <T> : Iarchivo<T>
@@ -66,7 +68,6 @@ namespace Archivos
             }
             catch (Exception ex)
             {
-
                 throw new ArchivosException(ex);
             }
             finally

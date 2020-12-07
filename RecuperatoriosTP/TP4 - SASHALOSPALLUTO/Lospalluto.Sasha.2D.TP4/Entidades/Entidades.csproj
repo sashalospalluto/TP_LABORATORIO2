@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Carrito.cs" />
     <Compile Include="ControlSql.cs" />
+    <Compile Include="Extensiones.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Helado.cs" />
     <Compile Include="Producto.cs" />
@@ -53,6 +54,10 @@
     <ProjectReference Include="..\Archivos\Archivos.csproj">
       <Project>{d847b0b5-9e85-43b7-bb64-0d00a875fce8}</Project>
       <Name>Archivos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{fd3212b5-a1bb-4a04-a1c3-58599f2a0750}</Project>
+      <Name>Excepciones</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

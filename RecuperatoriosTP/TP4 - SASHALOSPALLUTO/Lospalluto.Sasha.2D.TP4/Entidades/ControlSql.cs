@@ -13,64 +13,30 @@ namespace Entidades
     {
         static SqlConnection conexionBD;
 
+        /// <summary>
+        /// Coneccion con la base de datos "TP4"
+        /// </summary>
         static ControlSql()
         {
             conexionBD = new SqlConnection("Data Source=.; Initial Catalog = TP4; integrated security = true");
         }
-
-        //public static List<Pedido> GetPedidos ()
-        //{
-        //    List<Carrito> carritos = new List<Carrito>();
-        //    List<Pedido> pedidos = new List<Pedido>();
-
-        //    Producto producto;
-        //    List<Producto.GustoHelado> gustos;
-        //    Helado helado;
-
-        //    SqlCommand command = new SqlCommand();
-
-        //    command.Connection = conexionBD;
-        //    command.CommandType = CommandType.Text;
-        //    command.CommandText = "SELECT * FROM PEDIDOS";
-
-        //    if(conexionBD.State != ConnectionState.Open)
-        //    {
-        //        conexionBD.Open();
-        //    }
-
-        //    SqlDataReader datoDeLaTabla = command.ExecuteReader();
-
-        //    while (datoDeLaTabla.Read())
-        //    {
-        //        gustos = new List<Producto.GustoHelado>();
-
-        //        if(datoDeLaTabla["producto"].ToString() == "Helado")
-        //        {
-        //            gustos.Add((Producto.GustoHelado)Enum.Parse(typeof(Producto.GustoHelado), datoDeLaTabla["gusto1"].ToString()));
-        //            gustos.Add((Producto.GustoHelado)Enum.Parse(typeof(Producto.GustoHelado), datoDeLaTabla["gusto2"].ToString()));
-        //            gustos.Add((Producto.GustoHelado)Enum.Parse(typeof(Producto.GustoHelado), datoDeLaTabla["gusto3"].ToString()));
-        //            gustos.Add((Producto.GustoHelado)Enum.Parse(typeof(Producto.GustoHelado), datoDeLaTabla["gusto4"].ToString()));
-
-        //            //helado = new Helado()
-
-        //            //productoHelado = new Helado((Helado.Tamanio)Enum.Parse(typeof(Helado.Tamanio), cmbTamanio.SelectedItem.ToString()), gustos);
-        //            //miCarrito += productoHelado;
-        //            //miCarrito.CalcularTotal();
-        //        }
-
-
-        //        //producto = new Producto(gustos);
-                
-        //    }
-            
+        
+        /// <summary>
+        /// Guardo el carrito en mi base de datos
+        /// </summary>
+        /// <param name="carrito">carrito a guardar</param>
         public static void SetCarrito(Carrito carrito)
         {
-            //SqlCommand command = new SqlCommand(string.Format("INSERT INTO ");
-            //command.Connection = conexionBD;
-            //command.CommandType = CommandType.Text;
-            //command.CommandText = "SELECT * FROM PEDIDOS";
+            SqlCommand command = new SqlCommand();
+            command.Connection = conexionBD;
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("INSERT INTO heladeria (numeroPedido,cliente,total) VALUES ('{0}','{1}','{2}')", carrito.NumeroDePedido, carrito.NombreCliente, carrito.Total);
+            command.CommandText = sb.ToString();
+            conexionBD.Open();          
+           
+            command.ExecuteNonQuery();
+            conexionBD.Close();            
         }
-
-
     }
 }

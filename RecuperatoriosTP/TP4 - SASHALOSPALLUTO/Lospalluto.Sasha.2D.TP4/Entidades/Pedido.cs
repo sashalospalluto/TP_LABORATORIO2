@@ -8,46 +8,47 @@ using Archivos;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Declaracion del delegado
+    /// </summary>
+    /// <param name="carrito">carrito</param>
     public delegate void Preparacion(Carrito carrito);
+
     public class Pedido
     {
-        static Queue<Carrito> pedidosEnPreparacion;
-        static List<Carrito> pedidosFinalizados;
+        private static Queue<Carrito> pedidosEnPreparacion;
+        private static List<Carrito> pedidosFinalizados;
+        private static List<Thread> listaHilos;
         public event Preparacion PreparandoPedido;
 
-        public void CarritoAceptado(object carrito)
-        {
-            Carrito carritoAux = new Carrito();
-            while(true)
-            {
-                //Thread.Sleep(new Random().Next(2000, 7000));
-                if (this.PreparandoPedido != null && carritoAux!=carrito)
-                {
-                    carritoAux = (Carrito)carrito;
-                    this.PreparandoPedido.Invoke((Carrito)carrito);
-                    Thread.Sleep(new Random().Next(500, 500));
-                }
-            }
-        }
-
-        public static void CargoPedido(Carrito carrito)
-        {
-            pedidosEnPreparacion.Enqueue(carrito);
-            //Thread.Sleep(new Random().Next(2000, 7000));
-        }
-
-        public static void EntregoPedido(Carrito carrito)
-        {
-            pedidosEnPreparacion.Dequeue();
-            pedidosFinalizados.Add(carrito);
-        }
-
+        #region Constructores
+        /// <summary>
+        /// Constructor por defecto
+        /// </summary>
         public Pedido()
         {
-            //this.PreparandoPedido += CargoPedido;
-            //this.PreparandoPedido += EntregoPedido;
+
         }
 
+        /// <summary>
+        /// Constructor estatico que inicializa las listas y colas
+        /// </summary>
+        static Pedido()
+        {
+            pedidosEnPreparacion = new Queue<Carrito>();
+            pedidosFinalizados = new List<Carrito>();
+            listaHilos = new List<Thread>();
+        }
+        #endregion
+
+        #region Propiedades
+        public List<Carrito> PedidosFinalizados
+        {
+            get
+            {
+                return pedidosFinalizados;
+            }
+        }
         public Queue<Carrito> PedidosEnPreparacion
         {
             get
@@ -55,12 +56,38 @@ namespace Entidades
                 return pedidosEnPreparacion;
             }
         }
+        #endregion
 
-        static Pedido()
+        #region Metodos
+        /// <summary>
+        /// Metodo que invoca el evento TEMA 24
+        /// </summary>
+        public void CarritoAceptado()
         {
-            pedidosEnPreparacion = new Queue<Carrito>();
-            pedidosFinalizados = new List<Carrito>();
-           
+            Carrito carritoAux = new Carrito();
+            while ((this.PedidosEnPreparacion.Count >= 1) == true)
+            {
+                //espero 5 segundos
+                Thread.Sleep(new Random().Next(5000, 7000));
+
+                //elimino el pedido en preparacion y agrego el pedido a mi lista finalizada
+                carritoAux = PedidosEnPreparacion.Peek();
+
+                PedidosFinalizados.Add(carritoAux);
+                PedidosEnPreparacion.Dequeue();
+
+                //invoco a mi metodo para agregar el dato a dgv terminado
+                this.PreparandoPedido.Invoke(carritoAux);
+            }
+        }
+
+        /// <summary>
+        /// metodo que agrega un carrito a la cola en preparacion
+        /// </summary>
+        /// <param name="carrito">carrito</param>
+        public static void CargoPedido(Carrito carrito)
+        {
+            pedidosEnPreparacion.Enqueue(carrito);
         }
 
         /// <summary>
@@ -77,6 +104,17 @@ namespace Entidades
         }
 
         /// <summary>
+        /// Cierra todos los hilos abiertos
+        /// </summary>
+        public static void CerrarHilos()
+        {
+            foreach (Thread hilo in listaHilos)
+            {
+                hilo.Abort();
+            }
+        }
+
+        /// <summary>
         /// Metodo que guarda el pedido en un archivo con extension .xml
         /// </summary>
         /// <param name="pedido">universidad a guardad</param>
@@ -85,33 +123,30 @@ namespace Entidades
         {
             Xml<Pedido> xml = new Xml<Pedido>();
 
-            return xml.Guardar("Pedido", pedido); ;
-        }
+            return xml.Guardar("Pedido", pedido);
+        } 
+        #endregion
 
-
-        public static Pedido operator + (Pedido pedido, Carrito carrito)
-        {   
-            if(carrito != null)
-            {
-                pedidosEnPreparacion.Enqueue(carrito);
-                
-            }           
-
-            return pedido;
-        }
-
-        public static Pedido operator - (Pedido pedido, Carrito carrito)
-        {         
+        #region Operadores
+        /// <summary>
+        /// Operador que agrega un carrito al pedido, ademas inicia un hilo TEMA 23
+        /// </summary>
+        /// <param name="pedido">pedido</param>
+        /// <param name="carrito">carrito</param>
+        /// <returns></returns>
+        public static Pedido operator +(Pedido pedido, Carrito carrito)
+        {
             if (carrito != null)
             {
-                pedidosFinalizados.Add(carrito);
-                pedidosEnPreparacion.Dequeue();
-                
+                Thread hilo = new Thread(pedido.CarritoAceptado);
+                pedidosEnPreparacion.Enqueue(carrito);
+                Pedido.listaHilos.Add(hilo);
+                hilo.Start();
             }
 
             return pedido;
-        }
-
+        } 
+        #endregion
 
     }
 }
